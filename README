@@ -1,0 +1,11 @@
+A simple first-person shooter for the Nintendo DS
+
+This will be made iteratively and new builds available via:
+https://ci.opengamedevelopers.org
+
+Lastest builds can be downloaded from:
+ftp://ftp.opengamedevelopers.org/projects/zds/builds/unstable/latest
+ftp://ftp.opengamedevelopers.org/projects/zds/builds/stable/latest
+
+The stable builds are as bug-free as possible, while unstable will have as many 
+bugs as the new features implemented accrue.
