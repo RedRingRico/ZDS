@@ -3,21 +3,27 @@
 
 int main( int p_Argc, char **p_ppArgv )
 {
-	touchPosition touch;
+	videoSetMode( MODE_0_3D );
 
-	consoleDemoInit( );
+	glInit( );
 
-	iprintf( "\n\n\tZDS Ver. 0.0.0.1\n");
+	glClearColor( 4, 0, 4, 31 );
+	glClearPolyID( 63 );
+	glClearDepth( 0x7FFF );
+	
+	glViewport( 0, 0, 255, 191 );
 
 	while( 1 )
 	{
-		swiWaitForVBlank( );
 		scanKeys( );
 
 		if( keysDown( ) & KEY_START )
 		{
 			break;
 		}
+
+		swiWaitForVBlank( );
+		glFlush( 0 );
 	}
 
 	return 0;
