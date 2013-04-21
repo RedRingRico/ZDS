@@ -13,7 +13,7 @@ export TARGETDIR	= $(TOPDIR)/Bin
 export OBJDIR		= $(TOPDIR)/Obj
 
 
-.PHONY: ARM7/$(TARGET).elf ARM9/$(TARGET).elf $(TARGETDIR)
+.PHONY: $(OBJDIR)/ARM7/$(TARGET).elf $(OBJDIR)/ARM9/$(TARGET).elf $(TARGETDIR)
 
 #---------------------------------------------------------------------------------
 # main targets
@@ -41,6 +41,3 @@ clean:
 	$(MAKE) -C ARM7 clean
 	rm -f $(TARGETDIR)/$(TARGET).nds
 
-cleanelf:
-	rm -rf $(OBJDIR)/ARM9/*.elf
-	rm -rf $(OBJDIR)/ARM7/*.elf
