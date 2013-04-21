@@ -40,3 +40,7 @@ clean:
 	$(MAKE) -C ARM9 clean
 	$(MAKE) -C ARM7 clean
 	rm -f $(TARGETDIR)/$(TARGET).nds
+
+cleanelf:
+	rm -rf $(OBJDIR)/ARM9/*.elf
+	rm -rf $(OBJDIR)/ARM7/*.elf
