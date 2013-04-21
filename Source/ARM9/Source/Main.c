@@ -1,7 +1,7 @@
 #include <nds.h>
 #include <stdio.h>
 
-int main( void )
+int main( int p_Argc, char **p_ppArgv )
 {
 	touchPosition touch;
 

@@ -19,7 +19,7 @@ void PowerButtonCB( )
 	g_Quit = true;
 }
 
-int main( void )
+int main( int p_Argv, char **p_ppArgv )
 {
 	readUserSettings( );
 
